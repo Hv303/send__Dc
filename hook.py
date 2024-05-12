@@ -60,7 +60,7 @@ def send_message_with_delay(url, payload, headers, delay):
 # Fungsi untuk menjalankan program
 def run_program():
     # Menampilkan pesan selamat datang
-    print(Back.BLUE +"Selamat datang!")
+    print("Selamat datang!")
     
     # Membuat thread untuk mengirim pesan dengan delay
     thread_1 = threading.Thread(target=send_message_with_delay, args=(url_1, payload, headers, delay_1))
