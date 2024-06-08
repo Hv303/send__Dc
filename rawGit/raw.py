@@ -1,5 +1,5 @@
 # code area
-init(autoreset=True)
+
 url_1 = f"https://discord.com/api/v9/channels/{Channel_1}/messages"
 
 # get cpu and ram
