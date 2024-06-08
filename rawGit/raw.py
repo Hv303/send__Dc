@@ -1,4 +1,5 @@
 # code area
+init(autoreset=True)
 url_1 = f"https://discord.com/api/v9/channels/{Channel_1}/messages"
 
 # get cpu and ram
@@ -53,14 +54,17 @@ def send_message_with_delay(url, payload, headers, delay):
            
 
         else:
-         print("lol")
+         print(Fore.RED + Style.BRIGHT +"[SC] GAGAL UNTUK MENGIRIM PESAN!!!")
         # requests.post(webhook_url, json={"content": "Gagal mengirim pesan. Kode status: "})
         time.sleep(delay)
 
 # Fungsi untuk menjalankan program
 def run_program():
     # Menampilkan pesan selamat datang
-    print("Selamat datang!")
+    print(Style.BRIGHT +"Selamat datang!")
+    print(Fore.MAGENTA + Style.BRIGHT + "SC By rill_hv")
+    print(Fore.GREEN + Style.BRIGHT + "Discord Server : https://discord.gg/MeHNCayCmu")
+    
     
     # Membuat thread untuk mengirim pesan dengan delay
     thread_1 = threading.Thread(target=send_message_with_delay, args=(url_1, payload, headers, delay_1))
