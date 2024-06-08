@@ -54,16 +54,16 @@ def send_message_with_delay(url, payload, headers, delay):
            
 
         else:
-         print(Fore.RED + Style.BRIGHT +"[SC] GAGAL UNTUK MENGIRIM PESAN!!!")
+         print(Fore.RED + Style.BRIGHT +"[SC] GAGAL UNTUK MENGIRIM PESAN!!!"+ Style.RESET_ALL)
         # requests.post(webhook_url, json={"content": "Gagal mengirim pesan. Kode status: "})
         time.sleep(delay)
 
 # Fungsi untuk menjalankan program
 def run_program():
     # Menampilkan pesan selamat datang
-    print(Style.BRIGHT +"Selamat datang!")
-    print(Fore.MAGENTA + Style.BRIGHT + "SC By rill_hv")
-    print(Fore.GREEN + Style.BRIGHT + "Discord Server : https://discord.gg/MeHNCayCmu")
+    print(Style.BRIGHT +"Selamat datang!"+ Style.RESET_ALL)
+    print(Fore.MAGENTA + Style.BRIGHT + "SC By rill_hv"+ Style.RESET_ALL)
+    print(Fore.GREEN + Style.BRIGHT + "Discord Server : https://discord.gg/MeHNCayCmu"+ Style.RESET_ALL)
     
     
     # Membuat thread untuk mengirim pesan dengan delay
