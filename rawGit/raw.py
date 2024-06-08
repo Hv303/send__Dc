@@ -54,7 +54,7 @@ def send_message_with_delay(url, payload, headers, delay):
            
 
         else:
-         print(Fore.RED + Style.BRIGHT +"[SC] GAGAL UNTUK MENGIRIM PESAN!!!"+ Style.RESET_ALL)
+         print("[SC] GAGAL UNTUK MENGIRIM PESAN!!!")
         # requests.post(webhook_url, json={"content": "Gagal mengirim pesan. Kode status: "})
         time.sleep(delay)
 
